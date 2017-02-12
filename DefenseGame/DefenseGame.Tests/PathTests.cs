@@ -3,13 +3,13 @@ using Xunit;
 
 namespace DefenseGame.Tests
 {
-    public class PathTest
+    public class PathTests
     {
         private readonly Map map3X3;
         private readonly MapLocation[] pathLocations3;
         private readonly Path path3;
 
-        public PathTest()
+        public PathTests()
         {
             map3X3 = new Map(3, 3);
             pathLocations3 = new[]
