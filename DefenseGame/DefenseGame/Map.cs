@@ -2,6 +2,7 @@
 {
     public class Map
     {
+        private const string EXCEPTION_MESSAGE = "Map must be at least 1x1";
         public readonly int Width;
         public readonly int Height;
 
@@ -9,8 +10,7 @@
         {
             if (width < 1 || height < 1)
             {
-                throw new System.ArgumentOutOfRangeException(
-                    "Map must be at least 1x1");
+                throw new System.ArgumentOutOfRangeException(EXCEPTION_MESSAGE);
             }
 
             Width = width;
